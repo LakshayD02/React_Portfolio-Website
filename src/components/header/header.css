@@ -1,0 +1,137 @@
+header {
+    height: 100vh;
+    /* padding-top: 7rem; */
+    overflow: hidden;
+}
+
+.scroll_down {
+    rotate: 90deg;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+}
+
+
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+
+}
+
+.header_des {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_des h1 {
+    line-height: 5rem;
+    font-size: 5rem;
+}
+
+.head_des {
+    padding-top: 3rem;
+}
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    bottom: 17rem;
+}
+
+.header_socials {
+    position: absolute;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -3rem; /* Adjust as needed */
+    left: 60%; /* Position it in the middle */
+    transform: translateX(-50%); /* Center horizontally */
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none; /* This prevents the tooltip from blocking mouse events */
+  }
+  
+  .tooltip.active {
+    opacity: 1;
+  }
+  
+  
+
+.me {
+    display: none;
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    /* border-radius: 12rem 12rem 0 0; */
+    border-radius: 31% 69% 70% 30% / 30% 30% 70% 70%;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+.scroll_down::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 90vh;
+    }
+
+    .header_socials,
+    .scroll_down {
+        display: none;
+    }
+}
