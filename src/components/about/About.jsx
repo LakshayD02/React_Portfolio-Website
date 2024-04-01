@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/About-Img.png'
 import Projects from '../../assets/Academic Projects.pdf'
-import Internships from '../../assets/Internships (Lakshay).pdf'
+import Internships from '../../assets/Internships-List_Lakshay.pdf'
 import { PiAlienBold } from "react-icons/pi";
 import { PiUsers } from "react-icons/pi";
 import { GoProjectRoadmap } from "react-icons/go";
@@ -35,7 +35,7 @@ const about = () => {
               <article className="about_card">
                 <PiAlienBold className='about_icon' />
                 <h5>Internships</h5>
-                <small>100+ Completed</small>
+                <small>125+ Completed</small>
               </article>
             </Tilt>
 
@@ -43,7 +43,7 @@ const about = () => {
               <article className="about_card">
                 <PiAlienBold className='about_icon' />
                 <h5>Experience</h5>
-                <small>25+ Months</small>
+                <small>30+ Months</small>
               </article>
             </Tilt>
 
