@@ -46,7 +46,7 @@ This React-based portfolio website provides a dynamic and engaging platform to s
 
 ## How to Run
 
-1. **Clone the repository:** git clone 💾 (Replace with your repo URL)
+1. **Clone the repository:** git clone <repository_url>
 
 2. **Navigate to the directory:** `cd React_Portfolio-Website`
 
